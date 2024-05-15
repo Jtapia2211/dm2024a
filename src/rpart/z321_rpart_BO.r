@@ -4,7 +4,7 @@
 # limpio la memoria
 rm(list = ls()) # remove all objects
 gc() # garbage collection
-
+library
 require("data.table")
 require("rlist")
 
@@ -206,7 +206,7 @@ dataset <- dataset[foto_mes==202107]
 # creo la carpeta donde va el experimento
 #  HT  representa  Hiperparameter Tuning
 dir.create("./exp/", showWarnings = FALSE)
-dir.create("./exp/HT3210/", showWarnings = FALSE)
+dir.create("./exp/HT3220/", showWarnings = FALSE)
 
 # Establezco el Working Directory DEL EXPERIMENTO
 setwd("./exp/HT3220/")

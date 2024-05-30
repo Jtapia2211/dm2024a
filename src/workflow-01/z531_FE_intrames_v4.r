@@ -46,7 +46,6 @@ AgregarVariables_IntraMes <- function(dataset) {
   #VARIABLES NUEVAS
   dataset[mpayroll == 0, indep := 1]
   dataset[, vm_mlimitecompra := rowSums(cbind(Master_mlimitecompra, Visa_mlimitecompra), na.rm = TRUE)]
-  dataset[, aaaindep_ctrx_a := indep*ctrx_quarter_normalizado]
   dataset[, aaaindep_ctrx_qua := indep * ctrx_quarter]
   dataset[, aaaindep_cproduct := indep * cproductos]
   dataset[, aaaindep_cseguro_ := indep * cseguro_auto]

@@ -90,7 +90,7 @@ AgregarVariables_IntraMes <- function(dataset) {
   dataset[, aaaindep_mtarjetav := indep * mtarjeta_visa_consumo]
   dataset[, aaaindep_mtarjetav2 := aaaindep_mtarjetav * mtarjeta_visa_consumo]
   dataset[, aaaindep_mtarjetam := indep * mtarjeta_master_consumo]
-  dataset[, aaaindep_mtarjetam2 := aaaindep_mtarjetam2 * mtarjeta_master_consumo]
+  dataset[, aaaindep_mtarjetam2 := aaaindep_mtarjetam * mtarjeta_master_consumo]
   dataset[, aaaindep_mprestam := indep * mprestamos_personales]
   dataset[, aaaindep_mprestam2 := aaaindep_mprestam * mprestamos_personales]
   dataset[, aaamcuenta_corriente_ctrx_qua := mcuenta_corriente / ctrx_quarter]
